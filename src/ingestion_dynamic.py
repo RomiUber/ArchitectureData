@@ -3,6 +3,8 @@ import requests
 import pandas as pd
 from pyspark.sql import SparkSession
 
+
+
 # URL de l'API publique
 url = 'https://api.themoviedb.org/3/movie/popular?api_key=607bcf001a678addfe26a33fc7c9b653'
 
@@ -24,8 +26,15 @@ spark = SparkSession.builder.appName('IngestionAPI').getOrCreate()
 # Convertir le DataFrame Pandas en DataFrame Spark
 df_dynamique_spark = spark.createDataFrame(df_dynamique_pd)
 
+# Supprimer les doublons dans les données API
+df_api_cleaned = df_dynamique_spark.dropDuplicates()
+
+
+# Supprimer les lignes avec des valeurs manquantes dans les deux DataFrames
+df_api_cleaned_dynamique = df_api_cleaned.na.drop()
+
 # Afficher les premières lignes du DataFrame
-df_dynamique_spark.show()
+df_api_cleaned_dynamique.show()
 
 # Fermer la session Spark
 spark.stop()
