@@ -26,7 +26,7 @@ dag = DAG(
 )
 
 def ingest_static_data():
-    # Charger les données statiques (Netflix movies) depuis un CSV
+    # Charger les données statiques (Netflix movies) en utilisant un CSV
     df = pd.read_csv('/home/vboxuser/Downloads/archive/netflix_titles.csv')
     df.to_csv('/path/to/processed/netflix_titles.csv', index=False)
 
