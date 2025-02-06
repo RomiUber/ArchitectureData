@@ -18,6 +18,8 @@ df3 = spark.read.parquet(PATH_hdfs_clean, header= True, inferSchema= True)
 
 df3.select("show_id","type","date_added","release_year", "duration").show(truncate=False)
 
+
+
 df3.write.parquet(PATH_hdfs_insight1, mode="overwrite")
 
 print("stockage_insight1_réussi")
