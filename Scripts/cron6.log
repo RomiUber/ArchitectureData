@@ -1,0 +1,124 @@
+25/02/10 03:42:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+25/02/10 03:58:42 WARN MemoryManager: Total allocation exceeds 95,00% (1 020 054 720 bytes) of h25/02/10 04:00:12 WARN MemoryManager: Total allocation exceeds 95,00% (1 020 054 720 bytes) of h25/02/10 04:01:10 WARN MemoryManager: Total allocation exceeds 95,00% (1 020 054 720 bytes) of heap memory
+Scaling row group sizes to 95,00% for 8 writers
+25/02/10 04:01:10 WARN MemoryManager: Total allocation exceeds 95,00% (1 020 054 720 bytes) of heap memory
+Scaling row group sizes to 84,44% for 9 writers
+25/02/10 04:01:16 WARN MemoryManager: Total allocation exceeds 95,00% (1 020 054 720 bytes) of heap memory
+Scaling row group sizes to 95,00% for 8 writers
+25/02/10 04:01:22 WARN SparkSession: Using an existing Spark session; only runtime SQL configurations will take effect.
+Récupération API réussie et chargement dans le DataFrame
++-----+--------------------+-----------------+-------+-----------------+--------------------+--------------------+----------+--------------------+------------+--------------------+-----+------------+----------+
+|adult|       backdrop_path|        genre_ids|     id|original_language|      original_title|            overview|popularity|         poster_path|release_date|               title|video|vote_average|vote_count|
++-----+--------------------+-----------------+-------+-----------------+--------------------+--------------------+----------+--------------------+------------+--------------------+-----+------------+----------+
+|false|/8ZTVqvKDQ8emSGUE...|    [28, 878, 12]|  27205|               en|           Inception|Cobb, a skilled t...|   129.321|/oYuLEt3zVCKq57qu...|  2010-07-15|           Inception|false|         8.4|     37001|
+|false|/JeGkRdNsOuMrgwBd...|         [18, 53]| 613092|               es|       El crack cero|Madrid, Spain, 19...|     5.241|/kzgPu2CMxBr4YZZx...|  2019-10-04|The Crack: Inception|false|       6.711|        38|
+|false|/p8K8Z4yjaslJx5mT...|[16, 28, 53, 878]|  64956|               en|Inception: The Co...|This "Inception" ...|    11.885|/7k5ITghCoHFSLLW7...|  2010-12-07|Inception: The Co...|false|         7.3|       304|
+|false|                null|               []| 350632|               en|        Nātyārambham|On certain Adavus...|     0.148|                null|            |The Inception of ...| true|         5.8|         3|
+|false|/x7ZzkFECLu9JUiKG...|             [18]|1359046|               mn|               Эхлэл|This film shows h...|     0.246|                null|  1980-01-23|           Inception|false|         0.0|         0|
+|false|                null|         [99, 18]|1370380|               hr|Sindrom Halla, za...|One hundred years...|     0.972|                null|  2017-01-01|Syndrome Halla, t...|false|         0.0|         0|
+|false|                null|             [35]| 542438|               en|    Bikini Inception|Two flunky Janito...|     1.537|/mNASlEOFX2c9upxa...|  2015-05-19|    Bikini Inception|false|         7.0|         1|
+|false|                null|          [10402]| 973484|               en|Inception: Music ...|The Special Featu...|     0.593|/7uM4DyRVAcgagvhZ...|  2010-12-07|Inception: Music ...| true|         6.0|         1|
+|false|                null|               []| 250845|               en|   WWA The Inception|The first World W...|     0.513|                null|  2001-10-26|   WWA The Inception| true|         3.1|         5|
++-----+--------------------+-----------------+-------+-----------------+--------------------+--------------------+----------+--------------------+------------+--------------------+-----+------------+----------+
+
+root
+ |-- adult: boolean (nullable = true)
+ |-- backdrop_path: string (nullable = true)
+ |-- genre_ids: array (nullable = true)
+ |    |-- element: long (containsNull = true)
+ |-- id: long (nullable = true)
+ |-- original_language: string (nullable = true)
+ |-- original_title: string (nullable = true)
+ |-- overview: string (nullable = true)
+ |-- popularity: double (nullable = true)
+ |-- poster_path: string (nullable = true)
+ |-- release_date: string (nullable = true)
+ |-- title: string (nullable = true)
+ |-- video: boolean (nullable = true)
+ |-- vote_average: double (nullable = true)
+ |-- vote_count: long (nullable = true)
+
+Stockage HDFS réussi
+importation réussie
++-------+-------+--------------------+--------------------+--------------------+--------------------+------------------+------------+------+---------+--------------------+--------------------+
+|show_id|   type|               title|            director|                cast|             country|        date_added|release_year|rating| duration|           listed_in|         description|
++-------+-------+--------------------+--------------------+--------------------+--------------------+------------------+------------+------+---------+--------------------+--------------------+
+|     s1|  Movie|Dick Johnson Is Dead|     Kirsten Johnson|                null|       United States|September 25, 2021|        2020| PG-13|   90 min|       Documentaries|As her father nea...|
+|     s2|TV Show|       Blood & Water|                null|Ama Qamata, Khosi...|        South Africa|September 24, 2021|        2021| TV-MA|2 Seasons|International TV ...|After crossing pa...|
+|     s3|TV Show|           Ganglands|     Julien Leclercq|Sami Bouajila, Tr...|                null|September 24, 2021|        2021| TV-MA| 1 Season|Crime TV Shows, I...|To protect his fa...|
+|     s4|TV Show|Jailbirds New Orl...|                null|                null|                null|September 24, 2021|        2021| TV-MA| 1 Season|Docuseries, Reali...|Feuds, flirtation...|
+|     s5|TV Show|        Kota Factory|                null|Mayur More, Jiten...|               India|September 24, 2021|        2021| TV-MA|2 Seasons|International TV ...|In a city of coac...|
+|     s6|TV Show|       Midnight Mass|       Mike Flanagan|Kate Siegel, Zach...|                null|September 24, 2021|        2021| TV-MA| 1 Season|TV Dramas, TV Hor...|The arrival of a ...|
+|     s7|  Movie|My Little Pony: A...|Robert Cullen, Jo...|Vanessa Hudgens, ...|                null|September 24, 2021|        2021|    PG|   91 min|Children & Family...|Equestria's divid...|
+|     s8|  Movie|             Sankofa|        Haile Gerima|Kofi Ghanaba, Oya...|United States, Gh...|September 24, 2021|        1993| TV-MA|  125 min|Dramas, Independe...|On a photo shoot ...|
+|     s9|TV Show|The Great British...|     Andy Devonshire|Mel Giedroyc, Sue...|      United Kingdom|September 24, 2021|        2021| TV-14|9 Seasons|British TV Shows,...|A talented batch ...|
+|    s10|  Movie|        The Starling|      Theodore Melfi|Melissa McCarthy,...|       United States|September 24, 2021|        2021| PG-13|  104 min|    Comedies, Dramas|A woman adjusting...|
+|    s11|TV Show|Vendetta: Truth, ...|                null|                null|                null|September 24, 2021|        2021| TV-MA| 1 Season|Crime TV Shows, D...|"Sicily boasts a ...|
+|    s12|TV Show|    Bangkok Breaking|   Kongkiat Komesiri|Sukollawat Kanaro...|                null|September 23, 2021|        2021| TV-MA| 1 Season|Crime TV Shows, I...|Struggling to ear...|
+|    s13|  Movie|        Je Suis Karl| Christian Schwochow|Luna Wedler, Jann...|Germany, Czech Re...|September 23, 2021|        2021| TV-MA|  127 min|Dramas, Internati...|After most of her...|
+|    s14|  Movie|Confessions of an...|       Bruno Garotti|Klara Castanho, L...|                null|September 22, 2021|        2021| TV-PG|   91 min|Children & Family...|When the clever b...|
+|    s15|TV Show|Crime Stories: In...|                null|                null|                null|September 22, 2021|        2021| TV-MA| 1 Season|British TV Shows,...|Cameras following...|
+|    s16|TV Show|   Dear White People|                null|Logan Browning, B...|       United States|September 22, 2021|        2021| TV-MA|4 Seasons|TV Comedies, TV D...|"Students of colo...|
+|    s17|  Movie|Europe's Most Dan...|Pedro de Echave G...|                null|                null|September 22, 2021|        2020| TV-MA|   67 min|Documentaries, In...|Declassified docu...|
+|    s18|TV Show|     Falsa identidad|                null|Luis Ernesto Fran...|              Mexico|September 22, 2021|        2020| TV-MA|2 Seasons|Crime TV Shows, S...|Strangers Diego a...|
+|    s19|  Movie|           Intrusion|          Adam Salky|Freida Pinto, Log...|                null|September 22, 2021|        2021| TV-14|   94 min|           Thrillers|After a deadly ho...|
+|    s20|TV Show|              Jaguar|                null|Blanca Suárez, Iv...|                null|September 22, 2021|        2021| TV-MA| 1 Season|International TV ...|In the 1960s, a H...|
++-------+-------+--------------------+--------------------+--------------------+--------------------+------------------+------------+------+---------+--------------------+--------------------+
+only showing top 20 rows
+
+stockage reussi
+recupération réussie
++-------+-------+--------------------+--------------------+--------------------+--------------------+------------------+------------+------+---------+--------------------+--------------------+
+|show_id|   type|               title|            director|                cast|             country|        date_added|release_year|rating| duration|           listed_in|         description|
++-------+-------+--------------------+--------------------+--------------------+--------------------+------------------+------------+------+---------+--------------------+--------------------+
+|     s1|  Movie|Dick Johnson Is Dead|     Kirsten Johnson|                null|       United States|September 25, 2021|        2020| PG-13|   90 min|       Documentaries|As her father nea...|
+|     s2|TV Show|       Blood & Water|                null|Ama Qamata, Khosi...|        South Africa|September 24, 2021|        2021| TV-MA|2 Seasons|International TV ...|After crossing pa...|
+|     s3|TV Show|           Ganglands|     Julien Leclercq|Sami Bouajila, Tr...|                null|September 24, 2021|        2021| TV-MA| 1 Season|Crime TV Shows, I...|To protect his fa...|
+|     s4|TV Show|Jailbirds New Orl...|                null|                null|                null|September 24, 2021|        2021| TV-MA| 1 Season|Docuseries, Reali...|Feuds, flirtation...|
+|     s5|TV Show|        Kota Factory|                null|Mayur More, Jiten...|               India|September 24, 2021|        2021| TV-MA|2 Seasons|International TV ...|In a city of coac...|
+|     s6|TV Show|       Midnight Mass|       Mike Flanagan|Kate Siegel, Zach...|                null|September 24, 2021|        2021| TV-MA| 1 Season|TV Dramas, TV Hor...|The arrival of a ...|
+|     s7|  Movie|My Little Pony: A...|Robert Cullen, Jo...|Vanessa Hudgens, ...|                null|September 24, 2021|        2021|    PG|   91 min|Children & Family...|Equestria's divid...|
+|     s8|  Movie|             Sankofa|        Haile Gerima|Kofi Ghanaba, Oya...|United States, Gh...|September 24, 2021|        1993| TV-MA|  125 min|Dramas, Independe...|On a photo shoot ...|
+|     s9|TV Show|The Great British...|     Andy Devonshire|Mel Giedroyc, Sue...|      United Kingdom|September 24, 2021|        2021| TV-14|9 Seasons|British TV Shows,...|A talented batch ...|
+|    s10|  Movie|        The Starling|      Theodore Melfi|Melissa McCarthy,...|       United States|September 24, 2021|        2021| PG-13|  104 min|    Comedies, Dramas|A woman adjusting...|
+|    s11|TV Show|Vendetta: Truth, ...|                null|                null|                null|September 24, 2021|        2021| TV-MA| 1 Season|Crime TV Shows, D...|"Sicily boasts a ...|
+|    s12|TV Show|    Bangkok Breaking|   Kongkiat Komesiri|Sukollawat Kanaro...|                null|September 23, 2021|        2021| TV-MA| 1 Season|Crime TV Shows, I...|Struggling to ear...|
+|    s13|  Movie|        Je Suis Karl| Christian Schwochow|Luna Wedler, Jann...|Germany, Czech Re...|September 23, 2021|        2021| TV-MA|  127 min|Dramas, Internati...|After most of her...|
+|    s14|  Movie|Confessions of an...|       Bruno Garotti|Klara Castanho, L...|                null|September 22, 2021|        2021| TV-PG|   91 min|Children & Family...|When the clever b...|
+|    s15|TV Show|Crime Stories: In...|                null|                null|                null|September 22, 2021|        2021| TV-MA| 1 Season|British TV Shows,...|Cameras following...|
+|    s16|TV Show|   Dear White People|                null|Logan Browning, B...|       United States|September 22, 2021|        2021| TV-MA|4 Seasons|TV Comedies, TV D...|"Students of colo...|
+|    s17|  Movie|Europe's Most Dan...|Pedro de Echave G...|                null|                null|September 22, 2021|        2020| TV-MA|   67 min|Documentaries, In...|Declassified docu...|
+|    s18|TV Show|     Falsa identidad|                null|Luis Ernesto Fran...|              Mexico|September 22, 2021|        2020| TV-MA|2 Seasons|Crime TV Shows, S...|Strangers Diego a...|
+|    s19|  Movie|           Intrusion|          Adam Salky|Freida Pinto, Log...|                null|September 22, 2021|        2021| TV-14|   94 min|           Thrillers|After a deadly ho...|
+|    s20|TV Show|              Jaguar|                null|Blanca Suárez, Iv...|                null|September 22, 2021|        2021| TV-MA| 1 Season|International TV ...|In the 1960s, a H...|
++-------+-------+--------------------+--------------------+--------------------+--------------------+------------------+------------+------+---------+--------------------+--------------------+
+only showing top 20 rows
+
+nettoyage des données réussie
++-------+-------+--------------------+--------------------+--------------------+--------------------+-----------------+------------+------+---------+--------------------+--------------------+-----+----+----+
+|show_id|   type|               title|            director|                cast|             country|       date_added|release_year|rating| duration|           listed_in|         description|Année|Mois|Jour|
++-------+-------+--------------------+--------------------+--------------------+--------------------+-----------------+------------+------+---------+--------------------+--------------------+-----+----+----+
+|   s366|  Movie|     Eyes of a Thief|        Najwa Najjar|Khaled Abol El Na...|   , FRANCE, ALGERIA|    July 30, 2021|        2014| TV-14|  103 min|Dramas, Independe...|After a decade in...| null|null|null|
+|   s437|  Movie|The Tambour of Re...| Abdulaziz Alshlahei|Faisal Al Dokhei,...|        SAUDI ARABIA|    July 19, 2021|        2021| TV-14|   91 min|Dramas, Internati...|In an impoverishe...| null|null|null|
+|   s635|  Movie|          Wonder Boy|    Anissa Bonnefont|   Olivier Rousteing|              FRANCE|    June 26, 2021|        2019| TV-14|   83 min|Documentaries, In...|This revealing do...| null|null|null|
+|   s895|  Movie|Dance of the Fort...|        David Pablos|Alfonso Herrera, ...|      MEXICO, BRAZIL|     May 12, 2021|        2021| TV-MA|   99 min|Dramas, Independe...|A gay congressman...| null|null|null|
+|   s904|  Movie|             Nayattu|      Martin Prakkat|Kunchacko Boban, ...|               INDIA|      May 9, 2021|        2021| TV-MA|  122 min|Dramas, Internati...|Three police offi...| null|null|null|
+|  s1179|  Movie|           Jiu Jitsu|  Dimitri Logothetis|Alain Moussi, Nic...|       UNITED STATES|   March 20, 2021|        2020|     R|  102 min|  Action & Adventure|After the defeat ...| null|null|null|
+|  s1235|TV Show|Nevenka: Breaking...|Maribel Sánchez-M...|                null|               SPAIN|    March 5, 2021|        2021| TV-MA| 1 Season|Docuseries, Inter...|Nevenka Fernández...| null|null|null|
+|  s1282|  Movie|                 Red|    Tirumala Kishore|Ram Pothineni, Ni...|               INDIA|February 23, 2021|        2021| TV-14|  143 min|Dramas, Internati...|A murder investig...| null|null|null|
+|  s1715|  Movie|          Prom Night|    Nelson McCormick|Brittany Snow, Sc...|UNITED STATES, CA...|November 12, 2020|        2008| PG-13|   88 min|       Horror Movies|On prom night, a ...| null|null|null|
+|  s1919|TV Show|    Sword Art Online|                null|Yoshitsugu Matsuo...|               JAPAN|  October 1, 2020|        2018| TV-MA|3 Seasons|Anime Series, Int...|A video game whiz...| null|null|null|
+|  s2278|  Movie|         Madras Café|      Shoojit Sircar|John Abraham, Nar...|               INDIA|     July 5, 2020|        2013| TV-14|  128 min|Dramas, Internati...|An Indian intelli...| null|null|null|
+|  s2483|  Movie|      Bye Bye London|  Almunsif Alsuwaisi|Abdulhussain Abdu...|              KUWAIT|     May 21, 2020|        1981| TV-14|  177 min|Comedies, Dramas,...|In this satirical...| null|null|null|
+|  s2506|  Movie|   My Sleeping Lover|      Ahmad El-Badri|Mai Ezz El-Din, K...|               EGYPT|     May 19, 2020|        2008| TV-PG|   93 min|Comedies, Interna...|After undergoing ...| null|null|null|
+|  s2734|  Movie|       Kapoor & Sons|        Shakun Batra|Rishi Kapoor, Sid...|               INDIA|    April 1, 2020|        2016| TV-14|  138 min|Comedies, Dramas,...|Returning home to...| null|null|null|
+|  s2875|TV Show|      Altered Carbon|                null|Joel Kinnaman, Ja...|       UNITED STATES|February 27, 2020|        2020| TV-MA|2 Seasons|Crime TV Shows, T...|After 250 years o...| null|null|null|
+|  s2928|  Movie|Captain Underpant...|                null|Nat Faxon, Jay Gr...|       UNITED STATES|February 11, 2020|        2020| TV-Y7|   81 min|Children & Family...|In this interacti...| null|null|null|
+|  s2938|TV Show|Dragons: Rescue R...|                null|Nicolas Cantu, Br...|       UNITED STATES| February 7, 2020|        2020|  TV-Y|2 Seasons|Kids' TV, TV Come...|Twins Dak and Ley...| null|null|null|
+|  s3042|  Movie|       Bulletproof 2|    Don Michael Paul|Faizon Love, Kirk...|       UNITED STATES|  January 9, 2020|        2020| TV-MA|   97 min|Action & Adventur...|A special agent a...| null|null|null|
+|  s3237|TV Show|Once Upon A Time ...|                null|Xu Kai, Sandrine ...|               CHINA|November 23, 2019|        2019| TV-14| 1 Season|International TV ...|As the nine conti...| null|null|null|
+|  s3390|  Movie|           Free Fire|        Ben Wheatley|Sharlto Copley, A...|      UNITED KINGDOM| October 21, 2019|        2016|     R|   91 min|Action & Adventur...|A sketchy arms tr...| null|null|null|
++-------+-------+--------------------+--------------------+--------------------+--------------------+-----------------+------------+------+---------+--------------------+--------------------+-----+----+----+
+only showing top 20 rows
+
+stockage_cleaned_to_hdfs reussi

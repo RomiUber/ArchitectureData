@@ -1,0 +1,55 @@
+importation réussie
++-------+-------+--------------------+--------------------+--------------------+--------------------+------------------+------------+------+---------+--------------------+--------------------+
+|show_id|   type|               title|            director|                cast|             country|        date_added|release_year|rating| duration|           listed_in|         description|
++-------+-------+--------------------+--------------------+--------------------+--------------------+------------------+------------+------+---------+--------------------+--------------------+
+|     s1|  Movie|Dick Johnson Is Dead|     Kirsten Johnson|                NULL|       United States|September 25, 2021|        2020| PG-13|   90 min|       Documentaries|As her father nea...|
+|     s2|TV Show|       Blood & Water|                NULL|Ama Qamata, Khosi...|        South Africa|September 24, 2021|        2021| TV-MA|2 Seasons|International TV ...|After crossing pa...|
+|     s3|TV Show|           Ganglands|     Julien Leclercq|Sami Bouajila, Tr...|                NULL|September 24, 2021|        2021| TV-MA| 1 Season|Crime TV Shows, I...|To protect his fa...|
+|     s4|TV Show|Jailbirds New Orl...|                NULL|                NULL|                NULL|September 24, 2021|        2021| TV-MA| 1 Season|Docuseries, Reali...|Feuds, flirtation...|
+|     s5|TV Show|        Kota Factory|                NULL|Mayur More, Jiten...|               India|September 24, 2021|        2021| TV-MA|2 Seasons|International TV ...|In a city of coac...|
+|     s6|TV Show|       Midnight Mass|       Mike Flanagan|Kate Siegel, Zach...|                NULL|September 24, 2021|        2021| TV-MA| 1 Season|TV Dramas, TV Hor...|The arrival of a ...|
+|     s7|  Movie|My Little Pony: A...|Robert Cullen, Jo...|Vanessa Hudgens, ...|                NULL|September 24, 2021|        2021|    PG|   91 min|Children & Family...|Equestria's divid...|
+|     s8|  Movie|             Sankofa|        Haile Gerima|Kofi Ghanaba, Oya...|United States, Gh...|September 24, 2021|        1993| TV-MA|  125 min|Dramas, Independe...|On a photo shoot ...|
+|     s9|TV Show|The Great British...|     Andy Devonshire|Mel Giedroyc, Sue...|      United Kingdom|September 24, 2021|        2021| TV-14|9 Seasons|British TV Shows,...|A talented batch ...|
+|    s10|  Movie|        The Starling|      Theodore Melfi|Melissa McCarthy,...|       United States|September 24, 2021|        2021| PG-13|  104 min|    Comedies, Dramas|A woman adjusting...|
+|    s11|TV Show|Vendetta: Truth, ...|                NULL|                NULL|                NULL|September 24, 2021|        2021| TV-MA| 1 Season|Crime TV Shows, D...|"Sicily boasts a ...|
+|    s12|TV Show|    Bangkok Breaking|   Kongkiat Komesiri|Sukollawat Kanaro...|                NULL|September 23, 2021|        2021| TV-MA| 1 Season|Crime TV Shows, I...|Struggling to ear...|
+|    s13|  Movie|        Je Suis Karl| Christian Schwochow|Luna Wedler, Jann...|Germany, Czech Re...|September 23, 2021|        2021| TV-MA|  127 min|Dramas, Internati...|After most of her...|
+|    s14|  Movie|Confessions of an...|       Bruno Garotti|Klara Castanho, L...|                NULL|September 22, 2021|        2021| TV-PG|   91 min|Children & Family...|When the clever b...|
+|    s15|TV Show|Crime Stories: In...|                NULL|                NULL|                NULL|September 22, 2021|        2021| TV-MA| 1 Season|British TV Shows,...|Cameras following...|
+|    s16|TV Show|   Dear White People|                NULL|Logan Browning, B...|       United States|September 22, 2021|        2021| TV-MA|4 Seasons|TV Comedies, TV D...|"Students of colo...|
+|    s17|  Movie|Europe's Most Dan...|Pedro de Echave G...|                NULL|                NULL|September 22, 2021|        2020| TV-MA|   67 min|Documentaries, In...|Declassified docu...|
+|    s18|TV Show|     Falsa identidad|                NULL|Luis Ernesto Fran...|              Mexico|September 22, 2021|        2020| TV-MA|2 Seasons|Crime TV Shows, S...|Strangers Diego a...|
+|    s19|  Movie|           Intrusion|          Adam Salky|Freida Pinto, Log...|                NULL|September 22, 2021|        2021| TV-14|   94 min|           Thrillers|After a deadly ho...|
+|    s20|TV Show|              Jaguar|                NULL|Blanca Suárez, Iv...|                NULL|September 22, 2021|        2021| TV-MA| 1 Season|International TV ...|In the 1960s, a H...|
++-------+-------+--------------------+--------------------+--------------------+--------------------+------------------+------------+------+---------+--------------------+--------------------+
+only showing top 20 rows
+
+stockage reussi
+recupération réussie
++-------+-------+--------------------+--------------------+--------------------+--------------------+------------------+------------+------+---------+--------------------+--------------------+
+|show_id|   type|               title|            director|                cast|             country|        date_added|release_year|rating| duration|           listed_in|         description|
++-------+-------+--------------------+--------------------+--------------------+--------------------+------------------+------------+------+---------+--------------------+--------------------+
+|     s1|  Movie|Dick Johnson Is Dead|     Kirsten Johnson|                NULL|       United States|September 25, 2021|        2020| PG-13|   90 min|       Documentaries|As her father nea...|
+|     s2|TV Show|       Blood & Water|                NULL|Ama Qamata, Khosi...|        South Africa|September 24, 2021|        2021| TV-MA|2 Seasons|International TV ...|After crossing pa...|
+|     s3|TV Show|           Ganglands|     Julien Leclercq|Sami Bouajila, Tr...|                NULL|September 24, 2021|        2021| TV-MA| 1 Season|Crime TV Shows, I...|To protect his fa...|
+|     s4|TV Show|Jailbirds New Orl...|                NULL|                NULL|                NULL|September 24, 2021|        2021| TV-MA| 1 Season|Docuseries, Reali...|Feuds, flirtation...|
+|     s5|TV Show|        Kota Factory|                NULL|Mayur More, Jiten...|               India|September 24, 2021|        2021| TV-MA|2 Seasons|International TV ...|In a city of coac...|
+|     s6|TV Show|       Midnight Mass|       Mike Flanagan|Kate Siegel, Zach...|                NULL|September 24, 2021|        2021| TV-MA| 1 Season|TV Dramas, TV Hor...|The arrival of a ...|
+|     s7|  Movie|My Little Pony: A...|Robert Cullen, Jo...|Vanessa Hudgens, ...|                NULL|September 24, 2021|        2021|    PG|   91 min|Children & Family...|Equestria's divid...|
+|     s8|  Movie|             Sankofa|        Haile Gerima|Kofi Ghanaba, Oya...|United States, Gh...|September 24, 2021|        1993| TV-MA|  125 min|Dramas, Independe...|On a photo shoot ...|
+|     s9|TV Show|The Great British...|     Andy Devonshire|Mel Giedroyc, Sue...|      United Kingdom|September 24, 2021|        2021| TV-14|9 Seasons|British TV Shows,...|A talented batch ...|
+|    s10|  Movie|        The Starling|      Theodore Melfi|Melissa McCarthy,...|       United States|September 24, 2021|        2021| PG-13|  104 min|    Comedies, Dramas|A woman adjusting...|
+|    s11|TV Show|Vendetta: Truth, ...|                NULL|                NULL|                NULL|September 24, 2021|        2021| TV-MA| 1 Season|Crime TV Shows, D...|"Sicily boasts a ...|
+|    s12|TV Show|    Bangkok Breaking|   Kongkiat Komesiri|Sukollawat Kanaro...|                NULL|September 23, 2021|        2021| TV-MA| 1 Season|Crime TV Shows, I...|Struggling to ear...|
+|    s13|  Movie|        Je Suis Karl| Christian Schwochow|Luna Wedler, Jann...|Germany, Czech Re...|September 23, 2021|        2021| TV-MA|  127 min|Dramas, Internati...|After most of her...|
+|    s14|  Movie|Confessions of an...|       Bruno Garotti|Klara Castanho, L...|                NULL|September 22, 2021|        2021| TV-PG|   91 min|Children & Family...|When the clever b...|
+|    s15|TV Show|Crime Stories: In...|                NULL|                NULL|                NULL|September 22, 2021|        2021| TV-MA| 1 Season|British TV Shows,...|Cameras following...|
+|    s16|TV Show|   Dear White People|                NULL|Logan Browning, B...|       United States|September 22, 2021|        2021| TV-MA|4 Seasons|TV Comedies, TV D...|"Students of colo...|
+|    s17|  Movie|Europe's Most Dan...|Pedro de Echave G...|                NULL|                NULL|September 22, 2021|        2020| TV-MA|   67 min|Documentaries, In...|Declassified docu...|
+|    s18|TV Show|     Falsa identidad|                NULL|Luis Ernesto Fran...|              Mexico|September 22, 2021|        2020| TV-MA|2 Seasons|Crime TV Shows, S...|Strangers Diego a...|
+|    s19|  Movie|           Intrusion|          Adam Salky|Freida Pinto, Log...|                NULL|September 22, 2021|        2021| TV-14|   94 min|           Thrillers|After a deadly ho...|
+|    s20|TV Show|              Jaguar|                NULL|Blanca Suárez, Iv...|                NULL|September 22, 2021|        2021| TV-MA| 1 Season|International TV ...|In the 1960s, a H...|
++-------+-------+--------------------+--------------------+--------------------+--------------------+------------------+------------+------+---------+--------------------+--------------------+
+only showing top 20 rows
+
